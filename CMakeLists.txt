@@ -11,6 +11,7 @@ find_package(rclcpp REQUIRED)
 find_package(camera_info_manager REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(image_transport REQUIRED)
+find_package(sensor_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(std_srvs REQUIRED)
 find_package(imu_tools REQUIRED)
@@ -46,6 +47,7 @@ ament_target_dependencies(${PROJECT_NAME}
   camera_info_manager
   cv_bridge
   image_transport
+  sensor_msgs
   std_msgs
   std_srvs
   OpenCV
@@ -62,6 +64,7 @@ ament_target_dependencies(decoder
   camera_info_manager
   cv_bridge
   image_transport
+  sensor_msgs
   std_msgs
   std_srvs
   OpenCV
